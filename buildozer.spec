@@ -1,1 +1,29 @@
-IyBidWlsZG96ZXIuc3BlYwpbYXBwXQp0aXRsZSA9IEN1YmEuVFYKcGFja2FnZS5uYW1lID0gY3ViYXR2CnBhY2thZ2UuZG9tYWluID0gb3JnLmN1YmF0dgoKc291cmNlLmRpciA9IC4Kc291cmNlLmluY2x1ZGVfZXh0cyA9IHB5LHBuZyxqcGcsa3YsYXRsYXMsanNvbix0dGYKCnZlcnNpb24gPSAxLjAuMAoKcmVxdWlyZW1lbnRzID0gcHl0aG9uMyxraXZ5PT0yLjMuMCxraXZ5bWQ9PTEuMi4wLHBpbGxvdyxyZXF1ZXN0cyxiZWF1dGlmdWxzb3VwNCxwbHllcgoKb3JpZW50YXRpb24gPSBwb3J0cmFpdApmdWxsc2NyZWVuID0gMAoKYW5kcm9pZC5wZXJtaXNzaW9ucyA9IElOVEVSTkVUCgphbmRyb2lkLmFwaSA9IDMzCmFuZHJvaWQubWluYXBpID0gMjEKYW5kcm9pZC5hcmNocyA9IGFybTY0LXY4YSwgYXJtZWFiaS12N2EKYW5kcm9pZC5hbGxvd19iYWNrdXAgPSBUcnVlCgphbmRyb2lkLnByZXNwbGFzaF9jb2xvciA9ICMxYTFhMWEKYW5kcm9pZC5wcmVzcGxhc2ggPSBhc3NldHMvaWNvbnMvc3BsYXNoLnBuZwphbmRyb2lkLmljb24gPSBhc3NldHMvaWNvbnMvaWNvbi5wbmcKCltidWlsZG96ZXJdCmxvZ19sZXZlbCA9IDIKd2Fybl9vbl9yb290ID0gMQoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgo=
+[app]
+title = Cuba.TV
+package.name = cubatv
+package.domain = org.cubatv
+
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas,json,ttf
+
+version = 1.0.0
+
+requirements = python3,kivy==2.3.0,kivymd==1.2.0,pillow,requests,beautifulsoup4,plyer
+
+orientation = portrait
+fullscreen = 0
+
+android.permissions = INTERNET
+
+android.api = 33
+android.minapi = 21
+android.archs = arm64-v8a, armeabi-v7a
+android.allow_backup = True
+
+android.presplash_color = #1a1a1a
+android.presplash = assets/icons/splash.png
+android.icon = assets/icons/icon.png
+
+[buildozer]
+log_level = 2
+warn_on_root = 1
